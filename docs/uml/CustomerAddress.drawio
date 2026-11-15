@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="lvNvXDIHcCryciF1aOgn">
+    <mxGraphModel dx="1201" dy="643" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="j9HXknwCX5vBJGhGMblA-1" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontFamily=Verdana;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;strong&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;Customer&lt;/font&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="308" width="336" x="98" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-2" parent="j9HXknwCX5vBJGhGMblA-1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Verdana;fontSize=14;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;- id : Long&lt;br&gt;- name : String&lt;br&gt;- email : String&lt;br&gt;- address : Address&lt;/font&gt;" vertex="1">
+          <mxGeometry height="102" width="336" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-6" parent="j9HXknwCX5vBJGhGMblA-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;fontFamily=Verdana;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="8" width="336" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-7" parent="j9HXknwCX5vBJGhGMblA-1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Verdana;fontSize=14;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;+ Customer()&lt;br&gt;+ Customer(id : Long, name : String, email : String, address : Address)&lt;br&gt;+ getId() : Long&lt;br&gt;+ getName() : String&lt;br&gt;+ getEmail() : String&lt;br&gt;+ getAddress() : Address&lt;/font&gt;" vertex="1">
+          <mxGeometry height="143" width="336" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-17" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontFamily=Verdana;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;strong&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;Address&lt;/font&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="276" width="359" x="668" y="179" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-18" parent="j9HXknwCX5vBJGhGMblA-17" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Verdana;fontSize=14;" value="&lt;div&gt;&lt;p&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- street : String&lt;br&gt;- city : String&lt;br&gt;- postcode : String&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="359" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-19" parent="j9HXknwCX5vBJGhGMblA-17" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;fontFamily=Verdana;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="8" width="359" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-20" parent="j9HXknwCX5vBJGhGMblA-17" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Verdana;fontSize=14;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;+ Address()&lt;br&gt;+ Address(street : String, city : String, postcode : String)&lt;br&gt;+ getStreet() : String&lt;br&gt;+ getCity() : String&lt;br&gt;+ getPostcode() : String&lt;/font&gt;" vertex="1">
+          <mxGeometry height="141" width="359" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="j9HXknwCX5vBJGhGMblA-21" edge="1" parent="1" source="j9HXknwCX5vBJGhGMblA-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeWidth=4;strokeColor=#21425C;" target="j9HXknwCX5vBJGhGMblA-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
