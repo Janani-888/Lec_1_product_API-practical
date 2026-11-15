@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="xdcVoYDWX4VPdiofKJA5">
+    <mxGraphModel dx="1501" dy="804" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=57;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="&lt;strong&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Product&lt;/font&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="350" width="300" x="480" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-2" parent="wIqI_K1qGGTlRAD4GMSd-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="- id : Long&lt;br&gt;- name : String&lt;br&gt;- price : double" vertex="1">
+          <mxGeometry height="84" width="300" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-3" parent="wIqI_K1qGGTlRAD4GMSd-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;fontSize=18;fontFamily=Verdana;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-4" parent="wIqI_K1qGGTlRAD4GMSd-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="+ getId() : Long&lt;br&gt;+ getName() : String&lt;br&gt;+ getPrice() : double&lt;br&gt;+ setId(id : Long) : void&lt;br&gt;+ setName(name : String) : void&lt;br&gt;+ setPrice(price : double) : void" vertex="1">
+          <mxGeometry height="201" width="300" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-18" edge="1" parent="1" source="wIqI_K1qGGTlRAD4GMSd-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;edgeStyle=orthogonalEdgeStyle;endArrow=none;endFill=0;strokeWidth=3;strokeColor=light-dark(#4b6877, #ededed);">
+          <mxGeometry relative="1" x="0.1945" as="geometry">
+            <Array as="points">
+              <mxPoint x="244.5" y="666.6" />
+              <mxPoint x="614.5" y="666.6" />
+            </Array>
+            <mxPoint x="614.5" y="579.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=57;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;strong&gt;DigitalProduct&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="311" width="300" x="127" y="816" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-6" parent="wIqI_K1qGGTlRAD4GMSd-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="- downloadUrl : String&lt;br&gt;- fileSizeMB : double" vertex="1">
+          <mxGeometry height="84" width="300" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-7" parent="wIqI_K1qGGTlRAD4GMSd-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;fontSize=18;fontFamily=Verdana;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-8" parent="wIqI_K1qGGTlRAD4GMSd-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="+ getDownloadUrl() : String&lt;br&gt;+ getFileSizeMB() : double&lt;br&gt;+ setDownloadUrl(downloadUrl : String) : void&lt;br&gt;+ setFileSizeMB(fileSizeMB : double) : void" vertex="1">
+          <mxGeometry height="162" width="300" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-19" edge="1" parent="1" source="wIqI_K1qGGTlRAD4GMSd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;strokeWidth=3;strokeColor=light-dark(#477580, #ededed);">
+          <mxGeometry relative="1" x="-0.0005" as="geometry">
+            <Array as="points">
+              <mxPoint x="915" y="666.6" />
+              <mxPoint x="614.3" y="666.6" />
+            </Array>
+            <mxPoint x="614.2659359141294" y="569.4681542551416" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=57;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;strong&gt;PhysicalProduct&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="244" width="300" x="777" y="816" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-10" parent="wIqI_K1qGGTlRAD4GMSd-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="- weightKg : double&lt;br&gt;- dimensions : String" vertex="1">
+          <mxGeometry height="84" width="300" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-11" parent="wIqI_K1qGGTlRAD4GMSd-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;fontSize=18;fontFamily=Verdana;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-12" parent="wIqI_K1qGGTlRAD4GMSd-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Verdana;" value="+ getWeightKg() : double&lt;br&gt;+ getDimensions() : String" vertex="1">
+          <mxGeometry height="95" width="300" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-15" parent="1" style="html=1;whiteSpace=wrap;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Notation&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;+public (method)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;- private (attribute)&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;inheritance(extend)&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="267" x="1077" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-16" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;rotation=-90;opacity=80;opacityGroup=1;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="23" width="17" x="1113" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-17" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;rotation=-90;strokeWidth=3;strokeColor=light-dark(#507886, #ededed);" value="" vertex="1">
+          <mxGeometry height="55" width="43" x="592" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="wIqI_K1qGGTlRAD4GMSd-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;h1&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 26px;&quot;&gt;Product Catalogue - UML class diagram (Inheritance)&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="90" width="820" x="57" y="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
