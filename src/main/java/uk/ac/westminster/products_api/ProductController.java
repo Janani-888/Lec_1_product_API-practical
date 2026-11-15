@@ -23,15 +23,23 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
+    // Tutorial 5 - Activity 5
+    // Return summaries of all products
+    @GetMapping("/products/summaries")
+    public List<String> getSummaries() {
+        return productService.getAllSummaries();
+    }
+
     //Get a product using its ID
     @GetMapping("/products/{id}")
     public Product getProductById(@PathVariable Long id) {
         return productService.getProductById(id).orElse(null);
     }
 
-    // POST a new product
+    // Temporary fix: Product is abstract, so Jackson
+    // must deserialize JSON into a concrete subclass.
     @PostMapping("/products")
-    public Product addProduct(@RequestBody Product product) {
+    public Product addProduct(@RequestBody DigitalProduct product) {
         return productService.addProduct(product);
     }
 

@@ -17,6 +17,23 @@ public class ProductService {
         return products;
     }
 
+
+    // Tutorial 5 - Activity 5: Return summaries of all products
+    public List<String>getAllSummaries() {
+
+        List<String> summaries = new ArrayList<>();
+
+        for (Product p : products) {
+            summaries.add(p.getSummary());
+
+            /* Tutorial 5 - Task 19: Temporary experiment
+            if (p instanceof Discountable d) {
+                d.applyDiscount(0.10);
+            }*/
+        }
+        return summaries;
+    }
+
     // Add a new product
     public Product addProduct(Product product) {
         product.setId(nextId++);

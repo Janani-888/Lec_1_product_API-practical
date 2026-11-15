@@ -1,10 +1,14 @@
 package uk.ac.westminster.products_api;
 
-public class DigitalProduct extends Product {
+public class DigitalProduct extends Product
+    implements Discountable {
 
     // Fields specific to digital products
     private String downloadUrl;
     private double fileSizeMB;
+
+    //Tutorial 5 activity 4
+    private double discountedPrice;
 
     // No-argument constructor
     public DigitalProduct() {
@@ -20,6 +24,7 @@ public class DigitalProduct extends Product {
         // Initialize child-specific fields
         this.downloadUrl = downloadUrl;
         this.fileSizeMB = fileSizeMB;
+        this.discountedPrice = price;
     }
 
     // Getter for download URL
@@ -39,5 +44,21 @@ public class DigitalProduct extends Product {
     // Setter for file size
     public void setFileSizeMB(double fileSizeMB) {
         this.fileSizeMB = fileSizeMB;
+    }
+
+    @Override
+    public String getSummary() {
+        return "Digital: " + getName()
+                + " | Download: " + downloadUrl;
+    }
+
+    @Override
+    public void applyDiscount(double rate) {
+        this.discountedPrice = getPrice() * (1 - rate);
+    }
+
+    @Override
+    public double getDiscountedPrice() {
+        return discountedPrice;
     }
 }
