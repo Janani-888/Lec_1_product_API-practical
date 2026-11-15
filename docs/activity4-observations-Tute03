@@ -1,0 +1,5 @@
+Tutorial 3 – Activity 4: 404 Experiment
+Request: GET /products/99
+HTTP status: 200 OK
+Response body: Empty
+Conclusion: The controller returns null for a missing product, producing HTTP 200 instead of the more appropriate HTTP 404 Not Found. The lab intentionally leaves this behaviour unchanged.

@@ -1,0 +1,48 @@
+
+@startuml
+top to bottom direction
+hide circle
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam defaultFontName Verdana
+
+class ProductController #D5E8D4 {
+    - productService : ProductService
+    --
+    + getAllProducts() : List<Product>
+    + getProductById(id : Long) : Product
+    + addProduct(product : Product) : Product
+    + deleteProduct(id : Long) : void
+    + search(name : String) : List<Product>
+}
+
+class ProductService #E1D5E7 {
+    - products : List<Product>
+    - nextId : Long
+    --
+    + getAllProducts() : List<Product>
+    + addProduct(product : Product) : Product
+    + getProductById(id : Long) : Optional<Product>
+    + deleteProduct(id : Long) : void
+    + findByName(name : String) : List<Product>
+}
+
+class Product #FFF2CC {
+    - id : Long
+    - name : String
+    - price : double
+    --
+    + Product()
+    + Product(id: Long, name: String, price: double)
+    + getId() : Long
+    + getName() : String
+    + getPrice() : double
+    + setId(id : Long) : void
+    + setName(name : String) : void
+    + setPrice(price : double) : void
+}
+
+ProductController ..> ProductService
+ProductService --> Product
+
+@enduml
